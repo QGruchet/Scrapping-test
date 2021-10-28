@@ -6,7 +6,7 @@ import pandas as pd
 #On va récupérer le nombre de page du site
 url = "https://www.coingecko.com/fr"
 page = requests.get(url)
-
+ 
 soup = BeautifulSoup(page.content, 'html.parser')
 
 page_item = soup.find_all(class_='page-item')
